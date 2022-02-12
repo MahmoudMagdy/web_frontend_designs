@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OIO Foods</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript"
+            src="scripts/jquery.js"></script>
+</head>
+<body>
+<section id="main-section">
+    <div id="main-content">
+        <header>
+            <div id="branding">
+                <img src="img/icon.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="Highlighted"><a href="#">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="clr"></div>
+        </header>
+
+
+        <section id="showcase">
+            <img src="img/showcase.jpg">
+            <h1>Three breakfast idea to<br>control you appetite all day</h1>
+        </section>
+
+        <fieldset id="boxes">
+            <legend>TOP LIST</legend>
+            <div class="box">
+                <img src="img/food_2.png">
+                <h3>Healthy Smooth Bowls/Drinks</h3>
+            </div>
+            <div class="box">
+                <img src="img/food_6.png">
+                <h3>Healthy Smooth Bowls/Drinks</h3>
+            </div>
+            <div class="box">
+                <img src="img/food_7.png">
+                <h3>Healthy Smooth Bowls/Drinks</h3>
+            </div>
+            <div class="clr"></div>
+            <button class="move" id="left-arrow" onclick="changeItems(false)"><img src="img/arrow_left.png"></button>
+            <button class="move" onclick="changeItems(true)"><img src="img/arrow_right.png"></button>
+        </fieldset>
+    </div>
+    <aside><img id="aside-image" src="img/aside.png"></aside>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</section>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OIO</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div id="branding">
+        <h1>JUPITER</h1>
+    </div>
+    <nav>
+        <ul>
+            <li class="selected-nav">Home</li>
+            <li>Shop</li>
+            <li>Page</li>
+            <li>Elements</li>
+            <li>Demand</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <ul id="interact">
+        <li><i class="fas fa-search" style="font-size: 20px; padding-right: 5px"></i>Search</li>
+        <li><i class="fas fa-clipboard-list" style="font-size: 20px"></i></li>
+    </ul>
+</header>
+
+<section id="slider">
+    <div class="slider">
+        <div>
+            <article>
+                <h2>A Timeless Classic</h2>
+                <small>CREATIVE CONCERTINO AND VISUAL DESIGN</small>
+                <button class="general-button">SHOP NOW!</button>
+            </article>
+        </div>
+
+        <div>
+            <article>
+                <h2>A Timeless Classic</h2>
+                <small>CREATIVE CONCERTINO AND VISUAL DESIGN</small>
+                <button class="general-button">SHOP NOW!</button>
+            </article>
+        </div>
+
+        <div>
+            <article>
+                <h2>A Timeless Classic</h2>
+                <small>CREATIVE CONCERTINO AND VISUAL DESIGN</small>
+                <button class="general-button">SHOP NOW!</button>
+            </article>
+        </div>
+
+        <div>
+            <article>
+                <h2>A Timeless Classic</h2>
+                <small>CREATIVE CONCERTINO AND VISUAL DESIGN</small>
+                <button class="general-button">SHOP NOW!</button>
+            </article>
+        </div>
+
+        <div>
+            <article>
+                <h2>A Timeless Classic</h2>
+                <small>CREATIVE CONCERTINO AND VISUAL DESIGN</small>
+                <button class="general-button">SHOP NOW</button>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="showcase">
+    <div id="features">
+        <span class="fa-stack icon-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-sun fa-stack-1x"></i>
+        </span>
+        <h4>Jupiter is a <span class="attractive">Great Design</span> Idea for your Website <span class="attractive">Today!</span>
+        </h4>
+        <button class="hollow-button"><i class="fas fa-shopping-cart"></i>Buy with Card</button>
+    </div>
+
+    <div class="best-seller">
+        <div>
+            <h2>Odin Chair</h2>
+            <h3>$65 - $1.215</h3>
+            <button class="general-button">Check Now</button>
+        </div>
+    </div>
+
+    <div class="best-seller">
+        <div>
+            <h2>The Best Furniture</h2>
+            <h3>$65 - $1.215</h3>
+            <button class="general-button">Check Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="new-arrival">
+    <div id="arrival-header">
+        <span class="fa-stack icon-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="far fa-star fa-stack-1x"></i>
+        </span>
+        <h2>New Arrival</h2>
+        <small>Lorem ipsum dolor sit amet</small>
+    </div>
+    <div id="arrival-items"></div>
+</section>
+
+<section id="latest-posts">
+    <div id="latest-container">
+        <div id="latest-header">
+            <span class="fa-stack icon-stack">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fas fa-exchange-alt fa-stack-1x"></i>
+            </span>
+            <h2>Latest Posts</h2>
+            <small>Lorem ipsum dolor sit amet</small>
+        </div>
+        <div id="latest-items">
+            <div class="latest-item">
+                <button onclick="changeItems(false)">
+                        <i class="fas fa-arrow-left fa-2x"></i>
+                </button>
+            </div>
+            <div class="latest-item"></div>
+            <div class="latest-item">
+                    <button onclick="changeItems(true)">
+                            <i class="fas fa-arrow-right fa-2x"></i>
+                    </button>
+            </div>
+            <div class="item-data">
+                    <div class="recent-date">
+                            <h5>28</h5>
+                            <small class="month">Sept</small>
+                            <small>2018</small>
+                    </div>
+                    <h4>Blog ipsum dolor sit</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis distinctio ex.</small>
+                    <a href="#">Read More...</a>
+                    <div class="clr"></div>
+            </div>
+            <div class="item-data">
+                    <div class="recent-date">
+                            <h5>09</h5>
+                            <small class="month">Oct</small>
+                            <small>2018</small>
+                    </div>
+                    <h4>consectetur adipisicing</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis distinctio ex.</small>
+                    <a href="#">Read More...</a>
+                    <div class="clr"></div>
+            </div>
+            <div class="item-data">
+                    <div class="recent-date">
+                            <h5>28</h5>
+                            <small class="month">Dec</small>
+                            <small>2018</small>
+                    </div>
+                    <h4>Doloremque blanditiis</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis distinctio ex.</small>
+                    <a href="#">Read More...</a>
+                    <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="top-items">
+    <fieldset>
+        <legend>
+         <span class="fa-stack icon-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-angle-right fa-stack-1x"></i>
+        </span>
+            Top Rated
+        </legend>
+        <ul></ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+         <span class="fa-stack icon-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-bomb fa-stack-1x"></i>
+        </span>
+            On Sale
+        </legend>
+        <ul></ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+         <span class="fa-stack icon-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="far fa-bell fa-stack-1x"></i>
+        </span>
+            Recommended
+        </legend>
+        <ul></ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+         <span class="fa-stack icon-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-fire fa-stack-1x"></i>
+        </span>
+            Popular
+        </legend>
+        <ul></ul>
+    </fieldset>
+</section>
+
+<section id="modern-furniture">
+    <div class="black-background">
+        <div>
+            <h4>Check mat this weekend?</h4>
+            <h2>The Modern Furniture</h2>
+            <button class="general-button">MORE INFO</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="footer-head">
+        <div class="footer-item">
+            <h3>Our Stories</h3>
+            <ul>
+                <ul>
+                    <li>
+                        <small>Adipisicing</small>
+                    </li>
+                    <li>
+                        <small>Dolor sit</small>
+                    </li>
+                    <li>
+                        <small>Consectetur</small>
+                    </li>
+                    <li>
+                        <small>Distinctio</small>
+                    </li>
+                    <li>
+                        <small>Perspiciatis</small>
+                    </li>
+                    <li>
+                        <small>Veritatis</small>
+                    </li>
+                    <li>
+                        <small>Enim impedit</small>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h3>Information</h3>
+            <ul>
+                <li>
+                    <small>Adipisicing</small>
+                </li>
+                <li>
+                    <small>Lorem ipsum</small>
+                </li>
+                <li>
+                    <small>Dolor sit</small>
+                </li>
+                <li>
+                    <small>Amet</small>
+                </li>
+                <li>
+                    <small>Consectetur</small>
+                </li>
+                <li>
+                    <small>Distinctio</small>
+                </li>
+                <li>
+                    <small>Perspiciatis</small>
+                </li>
+                <li>
+                    <small>Veritatis</small>
+                </li>
+                <li>
+                    <small>Enim impedit</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h3>Recent Posts</h3>
+            <ul id="recent-posts">
+                <li>
+                    <div class="recent-date"></div>
+                    <h4>Blog and post lorem</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <div class="clr"></div>
+                </li>
+                <li>
+                    <div class="recent-date">
+                        <h5>28</h5>
+                        <small class="month">Sept</small>
+                        <small>2018</small>
+                    </div>
+                    <h4>2018 Post</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <div class="clr"></div>
+                </li>
+                <li>
+                    <div class="recent-date">
+                        <h5>09</h5>
+                        <small class="month ">Nov</small>
+                        <small>2017</small>    
+                    </div>
+                    <h4>Gallery Post</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h3>Newsletter</h3>
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ea eum incidunt. Hic,
+                molestiae! Lorem ipsum dolor.
+            </small>
+            <div class="clr"></div>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button class="general-button">SUBSCRIBE</button>
+            </form>
+            <div class="clr"></div>
+            <h2>Follow Us</h2>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitch fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack icon-stack fa-inverse">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-vimeo-v fa-stack-1x"></i>
+            </span>
+        </div>
+    </div>
+
+    <div id="footer-bottom">
+
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/http_code.jquery.com_jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/all.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

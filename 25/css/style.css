@@ -1,0 +1,180 @@
+@font-face {
+    font-family: AvenirBook;
+    src: url("fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+    font-family: AvenirRoman;
+    src: url("fonts/AvenirLTStd-Roman.otf");
+}
+
+@font-face {
+    font-family: AvenirRoman;
+    src: url("fonts/AvenirLTStd-Light.otf");
+}
+
+html, body {
+    height: 100%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.90);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.90);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.90);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: AvenirBook, AvenirRoman, serif;
+    background: url("../img/background.jpeg") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+input, button {
+    margin: auto;
+    display: block;
+}
+
+.light {
+    display: grid;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.73);
+}
+
+.container {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+}
+
+.container #title {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    text-align: start;
+    border-top: #4df095 solid 3px;
+}
+
+.container #title legend {
+    padding-right: 70px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.container #title h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    margin: 25px 0 120px;
+}
+
+.container #title h1 span {
+    padding: 0 40px 30px 0;
+    border-bottom: white solid 6px;
+}
+
+input {
+    font: 20px AvenirBook;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 15px;
+    padding: 3px 0 3px 100px;
+    border: none;
+    border-bottom: white solid 1px;
+    height: 50px;
+    width: 230px;
+}
+
+input[type="email"] {
+    background: url("../img/email.png") no-repeat 0 10px;
+}
+
+input[type="password"] {
+    background: url("../img/lock.png") no-repeat 0 10px;
+}
+
+button {
+    margin-top: 25px;
+    font: 13px AvenirBook;
+    color: white;
+    font-weight: bold;
+    background: url("../img/line.png") no-repeat 20px 20px;;
+    border: #4df095 solid 3px;
+    border-radius: 2px;
+    padding-left: 210px;
+    padding-right: 20px;
+    height: 52px;
+}
+
+#bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 130px 0 0;
+    border: none;
+}
+
+#bottom h3 {
+    margin: 0;
+    padding: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 13px;
+    align-self: start;
+    justify-self: start;
+    font-weight: bolder;
+}
+
+#bottom label{
+    margin: 0;
+    padding: 0;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-size: 13px;
+    align-self: start;
+    justify-self: end;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-position: -450px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    body {
+        background-position: -500px;
+    }
+
+    input {
+        width: 55%;
+        font-size: 16px;
+        height: 42px;
+    }
+
+    button {
+        width: 60%;
+        font-size: 16px;
+        height: 45px;
+    }
+
+    fieldset {
+        width: 80%;
+    }
+
+    fieldset h3 {
+        font-size: 16px;
+    }
+}
